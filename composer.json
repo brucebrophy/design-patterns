@@ -1,0 +1,15 @@
+{
+    "name": "brucebrophy/design-patterns",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruce Brophy",
+            "email": "bruce@brucebrophy.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"BruceBrophy\\DesignPatterns\\": "src/"}
+    },
+    "require": {}
+}
