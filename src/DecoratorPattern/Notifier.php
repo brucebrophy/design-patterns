@@ -4,5 +4,5 @@ namespace BruceBrophy\DesignPatterns\DecoratorPattern;
 
 interface Notifier
 {
-	public function send();
+    public function send();
 }
