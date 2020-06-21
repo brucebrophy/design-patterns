@@ -2,7 +2,7 @@
 
 namespace BruceBrophy\DesignPatterns\AdapterPattern;
 
-class Fighter
+class Fighter implements FighterInterface
 {
     public function attack()
     {

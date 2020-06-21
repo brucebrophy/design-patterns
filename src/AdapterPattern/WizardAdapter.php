@@ -2,7 +2,7 @@
 
 namespace BruceBrophy\DesignPatterns\AdapterPattern;
 
-class WizardAdapter
+class WizardAdapter implements FighterInterface
 {
     protected $wizard;
 
