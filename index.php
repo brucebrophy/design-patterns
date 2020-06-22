@@ -10,6 +10,8 @@ use BruceBrophy\DesignPatterns\DecoratorPattern\Services\SlackNotifier;
 use BruceBrophy\DesignPatterns\DecoratorPattern\Services\SMSNotifier;
 use BruceBrophy\DesignPatterns\TemplateMethodPattern\TurkeySub;
 use BruceBrophy\DesignPatterns\TemplateMethodPattern\VeggieSub;
+use BruceBrophy\DesignPatterns\StrategyPattern\App as LogApp;
+use BruceBrophy\DesignPatterns\StrategyPattern\LogToDatabase;
 
 // See Decorator Pattern: https://refactoring.guru/design-patterns/decorator
 (new SMSNotifier(new SlackNotifier(new EmailNotifier)))->send();
@@ -21,3 +23,7 @@ echo (new WizardAdapter(new Wizard))->attack();
 // See Template Method Pattern: https://refactoring.guru/design-patterns/template-method
 (new VeggieSub)->make();
 (new TurkeySub)->make();
+
+// See Strategy Pattern: https://refactoring.guru/design-patterns/strategy
+(new LogApp)->log('some information');
+(new LogApp)->log('some information', new LogToDatabase);
