@@ -4,5 +4,5 @@ namespace BruceBrophy\DesignPatterns\StrategyPattern;
 
 interface Logger
 {
-	public function log($data);
+    public function log($data);
 }
